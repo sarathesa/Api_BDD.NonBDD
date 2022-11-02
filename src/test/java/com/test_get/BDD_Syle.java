@@ -16,14 +16,6 @@ public class BDD_Syle {
 			
 			.asPrettyString();		
 	}
-private void getMethod1() {
-		RestAssured.given()
-			.baseUri("https://petstore.swagger.io/")
-		.when()
-			.get("v2/store/inventory")//.getStatusLine();
-			
-			.asPrettyString();		
-	}
 	@Test
 	public void postMethod() {
 		File jsonFile=new File("C:\\Users\\sarath esa\\eclipse-workspace\\API_PRACTICE\\src\\test\\resources\\Testjson.json");
@@ -36,5 +28,6 @@ private void getMethod1() {
 		.post()
 		.prettyPrint();
 	}
+	
 
 }
